@@ -17,7 +17,7 @@
 }
 .navbar-nav li{
     padding:0 10px;
-    color:#fff;
+    color:black;
 }
 .navbar-nav li a{
     color: #fff !important;
@@ -108,57 +108,6 @@ background-image: linear-gradient(to right,#a517ba,#5f1782);
 }
 
 
-/*footer{
- position:absolute;
- color:#fff;
- width:100vw;
-}
-.social{
-    padding:0;
-}
-h4{
-    padding:5px 0px;
-}
-social li{
-    display:inline-block;
-    background-color:#fff;
-    width:15px;
-    height:15px;
-    border-radius:50%;
-    text-align:center;
-    line-height:10px;
-    padding:0cm;
-}
-.social li a i{
-    padding-top:4px;
-    color:#333;
-    transition:.3s;
-    font-size:15px;
-}
-.social li a i:hover{
-   color: rgb(30,118,226);
-   text-decoration:none;
-}
-.footer .links ul{
-    list-style-type:none;
-}
-.footer .links li a{
-    color:#fff;
-    transition:color 0.2s;
-}
-.footer .links li a:hover{
-    text-decoration:none;
-    color:rgb(30,118,226);
-}
-.footer .location i{
-    font-size:10px;
-}
-.footer .copyright p{
-    font-size:1.2rem;
-    text-shadow:1px 1px black;
-    border-top:1px solid rgb(255,255,255,0.8);
-    border-bottom:1px solid rgb(255,255,255,0.8);
-}*/
 
 
 #social-media{
