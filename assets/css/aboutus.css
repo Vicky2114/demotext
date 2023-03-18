@@ -47,10 +47,16 @@ font-family: sans-serif;
 /*-----------------About us section----------------*/
 #Aboutus h1
 {
-    background-image: linear-gradient(to right,#a517ba,#5f1782);
+    background-image: linear-gradient(to right,orange,yellow,#a517ba,#5f1782);
     padding-bottom: 50px;
     padding-top: 50px;
+    padding-left: 400px;
 
+}
+.content .ul{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 200px;
 }
 .bd-example
 {

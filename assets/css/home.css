@@ -39,14 +39,16 @@
 
 
 #banner{
-    background-image: linear-gradient(to right,#a517ba,#5f1782);
+    background-image: linear-gradient(to right,rgb(238, 20, 238),#a517ba,#5f1782);
     color:#fff;
-    padding-top:5%;
+    padding-top: 10%;
 }
-.promo-title{
+.text_shadows{
     font-size:40px;
     font-weight:600;
     margin-top:100px;
+    padding-top: 100px;
+    
 }
 .play-btn{
     width:45px;
@@ -67,7 +69,8 @@
     /*background-image: url("https://www.pngmart.com/files/12/White-Wave-PNG-Image.png");*/
 }
 .services-img{
-    width:100px;
+    width:300px;
+    height: 150px;
     margin-top:20px;
 }
 .services{
@@ -80,7 +83,7 @@
 }
 .title::before{
     content:'';
-    background:#7b1798;
+    background:linear-gradient(to right,orange,yellow,#a517ba);
     height:5px;
     width:200px;
     margin-left:auto;
@@ -90,7 +93,7 @@
 }
 .title::after{
     content:'';
-    background:#7b1798;
+    background: linear-gradient(to right,orange,yellow,#a517ba);
     height:10px;
     width:50px;
     margin-left:auto;
@@ -107,58 +110,6 @@ border-radius:20px;
 background-image: linear-gradient(to right,#a517ba,#5f1782);
 }
 
-
-/*footer{
- position:absolute;
- color:#fff;
- width:100vw;
-}
-.social{
-    padding:0;
-}
-h4{
-    padding:5px 0px;
-}
-social li{
-    display:inline-block;
-    background-color:#fff;
-    width:15px;
-    height:15px;
-    border-radius:50%;
-    text-align:center;
-    line-height:10px;
-    padding:0cm;
-}
-.social li a i{
-    padding-top:4px;
-    color:#333;
-    transition:.3s;
-    font-size:15px;
-}
-.social li a i:hover{
-   color: rgb(30,118,226);
-   text-decoration:none;
-}
-.footer .links ul{
-    list-style-type:none;
-}
-.footer .links li a{
-    color:#fff;
-    transition:color 0.2s;
-}
-.footer .links li a:hover{
-    text-decoration:none;
-    color:rgb(30,118,226);
-}
-.footer .location i{
-    font-size:10px;
-}
-.footer .copyright p{
-    font-size:1.2rem;
-    text-shadow:1px 1px black;
-    border-top:1px solid rgb(255,255,255,0.8);
-    border-bottom:1px solid rgb(255,255,255,0.8);
-}*/
 
 
 #social-media{
@@ -302,3 +253,217 @@ transform:translateY(-10px);
         padding-left: 240px;
     }
   }
+
+:root {
+  --color-primary: #d4af37;
+  --color-secondary: orange;
+  --color-tertiary: #ffff;
+  --color-quaternary: red;
+  --color-quinary: black;
+  
+  
+}
+
+.text-shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: calc(1rem + 3vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  color: transparent;
+  /*background-color: white;*/
+  background-clip: text;
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.timeline{
+    position: relative;
+    max-width: 700px;
+    margin-left: 25%;
+    margin-bottom: 0;
+}
+.catogery{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    border-radius: 6px;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown{
+0%{
+    opacity: 1;
+    transition: translatev(-30px);
+}
+100%{
+    opacity: 1;
+    transition: translatev(0px);
+}
+}
+.catogery:nth-child(1){
+    animation-delay: 0s;
+}
+.catogery:nth-child(2){
+    animation-delay: 1s;
+}
+.catogery:nth-child(3){
+    animation-delay: 2s;
+}
+.catogery:nth-child(4){
+    animation-delay: 3s;
+}
+.catogery:nth-child(5){
+    animation-delay: 4s;
+}
+.catogery:nth-child(6){
+    animation-delay: 5s;
+}
+.text-box{
+    padding: 20px 30px;
+    background: linear-gradient(to right,orange,yellow);
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.left-side{
+    left: 0;
+}
+.right-side{
+    left: 50%;
+}
+.catogery img{
+position: absolute;
+width: 40px;
+border-radius: 50%;
+right: -20px;
+top: 32px;
+z-index: 10;
+}
+.right-side img{
+    left: -20px;
+}
+body{
+    background-color: #f0f2f5;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #a517ba;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.text-box h2{
+font-weight: 600;
+}
+.left-side-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid orange;
+    right: -15px;
+}
+.right-side-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid orange;
+    left: -15px;
+}
+.sample{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 200px;
+    align-content: center;
+    
+}
+
